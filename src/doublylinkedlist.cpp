@@ -47,18 +47,17 @@ bool DoublyLinkedList::deleteValue(int val) {
 
     if (!current) return false;
 
-    // case 1: deleting head
     if (current == head) {
         head = head->next;
         if (head) head->prev = nullptr;
         else tail = nullptr;
     }
-    // case 2: deleting tail
+
     else if (current == tail) {
         tail = tail->prev;
         tail->next = nullptr;
     }
-    // case 3: deleting in middle
+
     else {
         current->prev->next = current->next;
         current->next->prev = current->prev;

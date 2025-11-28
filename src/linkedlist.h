@@ -1,8 +1,6 @@
 #ifndef SINGLYLINKEDLIST_H
 #define SINGLYLINKEDLIST_H
 
-#include <iostream>
-
 class Linkedlist{
 private:
     struct Node{

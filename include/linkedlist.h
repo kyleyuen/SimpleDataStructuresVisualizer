@@ -6,6 +6,7 @@ private:
     struct Node{
         int val; 
         Node* next;
+        Node(int v) : val(v), next(nullptr) {}
     };
 
     Node* head;

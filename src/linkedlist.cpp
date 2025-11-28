@@ -1,4 +1,4 @@
-#include "linkedlist.h"
+#include "../include/linkedlist.h"
 #include <iostream>
 
 using namespace std; 
@@ -17,9 +17,7 @@ Linkedlist::~Linkedlist(){
 }
 
 void Linkedlist::insertHead(int val){
-    Node* newNode = new Node();
-    newNode->val = val;
-    newNode->next = nullptr;
+    Node* newNode = new Node(val);
 
     if (head == nullptr) {
         head = newNode;
@@ -31,9 +29,7 @@ void Linkedlist::insertHead(int val){
 }
 
 void Linkedlist::insertTail(int val){
-    Node* newNode = new Node();
-    newNode->val = val;
-    newNode->next = nullptr;
+    Node* newNode = new Node(val);
 
     if (head == nullptr) {
         head = newNode;
